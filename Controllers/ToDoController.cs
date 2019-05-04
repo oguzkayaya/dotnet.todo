@@ -65,6 +65,14 @@ namespace dotnetMvc.Controllers
       return RedirectToAction("GetTodos");
     }
 
+    [HttpPost("clear")]
+    public IActionResult ClearAllTasks(){
+      var all = from c in _dataContext.ToDoList select c;
+      _dataContext.ToDoList.RemoveRange(all);
+      _dataContext.SaveChanges();
+
+      return RedirectToAction("GetTodos");
+    }
 
   }
 }
