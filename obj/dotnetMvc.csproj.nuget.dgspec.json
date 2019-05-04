@@ -1,0 +1,69 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/oguz/code/dontnet/dotnetMvc/dotnetMvc.csproj": {}
+  },
+  "projects": {
+    "/home/oguz/code/dontnet/dotnetMvc/dotnetMvc.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/oguz/code/dontnet/dotnetMvc/dotnetMvc.csproj",
+        "projectName": "dotnetMvc",
+        "projectPath": "/home/oguz/code/dontnet/dotnetMvc/dotnetMvc.csproj",
+        "packagesPath": "/home/oguz/.nuget/packages/",
+        "outputPath": "/home/oguz/code/dontnet/dotnetMvc/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/home/oguz/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.AspNetCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            },
+            "Microsoft.AspNetCore.Razor.Design": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}
