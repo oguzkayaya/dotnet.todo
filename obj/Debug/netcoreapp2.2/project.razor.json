@@ -2789,6 +2789,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "Views/ToDo/Index.cshtml",
+      "TargetPath": "Views/ToDo/Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "Views/Shared/_CookieConsentPartial.cshtml",
       "TargetPath": "Views/Shared/_CookieConsentPartial.cshtml",
       "FileKind": "mvc"

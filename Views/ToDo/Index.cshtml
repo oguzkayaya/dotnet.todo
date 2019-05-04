@@ -1,0 +1,12 @@
+@model List<ToDo>
+
+<div>
+  @foreach (var item in Model)
+  {
+      <div style="padding: 10px; margin: 10px; background-color: #ccc;">
+        @item.Id -
+        @item.Task -
+        @item.status 
+      </div>
+  }
+</div>

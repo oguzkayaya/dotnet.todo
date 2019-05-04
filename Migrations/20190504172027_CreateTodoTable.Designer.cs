@@ -8,7 +8,7 @@ using dotnetMvc.Data;
 namespace dotnetMvc.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20190504144238_CreateTodoTable")]
+    [Migration("20190504172027_CreateTodoTable")]
     partial class CreateTodoTable
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -23,7 +23,7 @@ namespace dotnetMvc.Migrations
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd();
 
-                    b.Property<int>("Task");
+                    b.Property<string>("Task");
 
                     b.Property<bool>("status");
 

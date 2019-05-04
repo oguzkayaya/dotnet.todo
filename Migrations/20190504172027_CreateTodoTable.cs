@@ -13,7 +13,7 @@ namespace dotnetMvc.Migrations
                 {
                     Id = table.Column<int>(nullable: false)
                         .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
-                    Task = table.Column<int>(nullable: false),
+                    Task = table.Column<string>(nullable: true),
                     status = table.Column<bool>(nullable: false)
                 },
                 constraints: table =>

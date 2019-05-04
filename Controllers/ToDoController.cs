@@ -21,10 +21,14 @@ namespace dotnetMvc.Controllers
     }
 
     [HttpGet("")]
-    public IActionResult GetToDos(){
-      var todos = _dataContext.ToDoList.ToList();
-      return Json(todos);
+    public IActionResult GetToDos()
+    {
+      List<ToDo> todos = new List<ToDo>();
+      todos = _dataContext.ToDoList.ToList();
+      return View("Index", todos);
     }
+
+
 
   }
 }

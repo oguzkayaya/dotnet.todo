@@ -21,7 +21,7 @@ namespace dotnetMvc.Migrations
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd();
 
-                    b.Property<int>("Task");
+                    b.Property<string>("Task");
 
                     b.Property<bool>("status");
 
