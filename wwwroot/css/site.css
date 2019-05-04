@@ -54,3 +54,16 @@ body {
   height: 60px;
   line-height: 60px; /* Vertically center the text there */
 }
+
+.newTask {
+  width: 30%;
+  text-align: center;
+  border-radius: 5%;
+  padding: 20px;
+  margin: 30px auto;
+  background-color: rgb(201, 230, 168);
+}
+
+.newTask input {
+  margin: 10px;
+}

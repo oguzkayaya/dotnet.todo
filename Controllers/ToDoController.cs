@@ -28,6 +28,14 @@ namespace dotnetMvc.Controllers
       return View("Index", todos);
     }
 
+    [HttpPost("")]
+    public async Task<IActionResult> AddTodo(ToDo todo){
+      await _dataContext.ToDoList.AddAsync(todo);
+      await _dataContext.SaveChangesAsync();
+
+      return RedirectToAction("GetToDos");
+    }
+
 
 
   }

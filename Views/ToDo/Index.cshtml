@@ -1,6 +1,6 @@
 @model List<ToDo>
 
-<div>
+<div class="todoList">
   @foreach (var item in Model)
   {
       <div style="padding: 10px; margin: 10px; background-color: #ccc;">
@@ -10,3 +10,15 @@
       </div>
   }
 </div>
+
+<div class="newTask">
+  <form method="post" action="">
+    <input type="text" name="task" placeholder="New Task">
+    <br>
+    <label for="status">Status</label>
+    <input type="checkbox" name="status" id="status">
+    <br>
+    <input type="submit" value="Add Task">
+  </form>
+</div>
+
