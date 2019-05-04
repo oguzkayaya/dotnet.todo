@@ -3,11 +3,14 @@
 <div class="todoList">
   @foreach (var item in Model)
   {
-      <div style="padding: 10px; margin: 10px; background-color: #ccc;">
-        @item.Id -
-        @item.Task -
-        @item.status 
+    <div style="padding: 10px; margin: 10px; background-color: #ccc;">
+      @item.Id -
+      @item.Task -
+      @item.status 
+      <div style="display: inline; margin-left: 100px;">
+        <input type="button" value="Remove" onclick="location.href = 'todos/remove?id=@item.Id';">
       </div>
+    </div>
   }
 </div>
 

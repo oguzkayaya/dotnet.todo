@@ -29,13 +29,22 @@ namespace dotnetMvc.Controllers
     }
 
     [HttpPost("")]
-    public async Task<IActionResult> AddTodo(ToDo todo){
+    public async Task<IActionResult> AddTodo(ToDo todo)
+    {
       await _dataContext.ToDoList.AddAsync(todo);
       await _dataContext.SaveChangesAsync();
 
       return RedirectToAction("GetToDos");
     }
 
+    [HttpGet("remove")]
+    public IActionResult RemoveTodo(ToDo todo)
+    {
+      _dataContext.ToDoList.Remove(todo);
+      _dataContext.SaveChanges();
+
+      return RedirectToAction("GetTodos");
+    }
 
 
   }
