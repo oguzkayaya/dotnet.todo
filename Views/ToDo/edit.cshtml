@@ -1,0 +1,13 @@
+@model ToDo
+<div class="newTask">
+  @Model.Task - @Model.status
+  <form method="post" action="">
+    <input type="hidden" name="id" value="@Model.Id">
+    <input type="text" name="task" value="@Model.Task">
+    <br>
+    <label for="status">Status</label>
+    <input type="checkbox" name="status" id="status" checked="@Model.status" value="true">
+    <br>
+    <input type="submit" value="Edit Task">
+  </form>
+</div>

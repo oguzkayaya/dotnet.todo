@@ -47,5 +47,24 @@ namespace dotnetMvc.Controllers
     }
 
 
+    [HttpGet("edit")]
+    public IActionResult EditTodo(int id)
+    {
+      ToDo todo = _dataContext.ToDoList.First(c => c.Id == id);
+      return View("edit", todo);
+    }
+
+    [HttpPost("edit")]
+    public IActionResult UpdateTodo(int id, string task, bool status)
+    {
+      ToDo todo = _dataContext.ToDoList.First(c => c.Id == id);
+      todo.Task = task;
+      todo.status = status;
+      _dataContext.SaveChanges();
+
+      return RedirectToAction("GetTodos");
+    }
+
+
   }
 }

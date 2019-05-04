@@ -8,7 +8,8 @@
       @item.Task -
       @item.status 
       <div style="display: inline; margin-left: 100px;">
-        <input type="button" value="Remove" onclick="location.href = 'todos/remove?id=@item.Id';">
+        <input type="button" value="Remove" onclick="location.href = '/todos/remove?id=@item.Id';">
+        <input type="button" value="Edit" onclick="location.href = '/todos/edit?id=@item.Id';">
       </div>
     </div>
   }
@@ -19,7 +20,7 @@
     <input type="text" name="task" placeholder="New Task">
     <br>
     <label for="status">Status</label>
-    <input type="checkbox" name="status" id="status">
+    <input type="checkbox" name="status" id="status" value="true">
     <br>
     <input type="submit" value="Add Task">
   </form>

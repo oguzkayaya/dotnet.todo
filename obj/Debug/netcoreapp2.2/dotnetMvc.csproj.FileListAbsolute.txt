@@ -29,3 +29,4 @@
 /home/oguz/code/dontnet/dotnetMvc/obj/Debug/netcoreapp2.2/dotnetMvc.pdb
 /home/oguz/code/dontnet/dotnetMvc/obj/Debug/netcoreapp2.2/dotnetMvc.csproj.CopyComplete
 /home/oguz/code/dontnet/dotnetMvc/obj/Debug/netcoreapp2.2/Razor/Views/ToDo/Index.g.cshtml.cs
+/home/oguz/code/dontnet/dotnetMvc/obj/Debug/netcoreapp2.2/Razor/Views/ToDo/edit.g.cshtml.cs
